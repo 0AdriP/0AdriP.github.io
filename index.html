@@ -67,26 +67,6 @@
         .skill:hover {
             background-color: #8a0202;
         }
-        button {
-            background-color: #b60000;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px 0;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #8a0202;
-        }
-        input {
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            width: 200px;
-        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -114,8 +94,6 @@
             <div class="skills-container" id="skillsContainer">
                 <!-- Skills will be added here using JavaScript -->
             </div>
-            <input type="text" id="newSkillInput" placeholder="Enter a new skill">
-            <button onclick="addSkill()">Add Skill</button>
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -135,16 +113,6 @@
                 skillElement.textContent = skill;
                 skillsContainer.appendChild(skillElement);
             });
-        }
-
-        function addSkill() {
-            const newSkillInput = document.getElementById('newSkillInput');
-            const newSkill = newSkillInput.value.trim();
-            if (newSkill) {
-                skills.push(newSkill);
-                displaySkills();
-                newSkillInput.value = '';
-            }
         }
 
         window.onload = displaySkills;
