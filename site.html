@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Student CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0077b6;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background-color: #0077b6;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #023e8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="path_to_your_image.jpg" alt="Profile Image" class="profile-img">
+        <h1>John Doe</h1>
+        <p>Physics Student</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate physics student with a keen interest in quantum mechanics and astrophysics. I enjoy solving complex problems and conducting experiments to understand the fundamental laws of the universe.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Physics</strong><br>University of Example, Expected Graduation: 2025</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container" id="skillsContainer">
+                <!-- Skills will be added here using JavaScript -->
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Quantum Computing Research</strong><br>Description: Conducted research on quantum algorithms and their applications in cryptography.</p>
+            <p><strong>Astrophysics Simulation</strong><br>Description: Developed simulations to model the behavior of celestial bodies.</p>
+        </section>
+        <button onclick="addSkill()">Add Skill</button>
+    </div>
+
+    <script>
+        const skills = ["Quantum Mechanics", "Astrophysics", "Data Analysis", "Programming"];
+
+        function displaySkills() {
+            const skillsContainer = document.getElementById('skillsContainer');
+            skillsContainer.innerHTML = '';
+            skills.forEach(skill => {
+                const skillElement = document.createElement('div');
+                skillElement.className = 'skill';
+                skillElement.textContent = skill;
+                skillsContainer.appendChild(skillElement);
+            });
+        }
+
+        function addSkill() {
+            const newSkill = prompt("Enter a new skill:");
+            if (newSkill) {
+                skills.push(newSkill);
+                displaySkills();
+            }
+        }
+
+        window.onload = displaySkills;
+    </script>
+</body>
+</html>
