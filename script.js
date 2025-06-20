@@ -15,24 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: 'Statistical Physics', level: 90 },
         { name: 'Thermodynamics', level: 85 },
         { name: 'Electromagnetism', level: 80 },
-        { name: 'Relativity', level: 75 },
+        { name: 'Special Relativity', level: 75 },
         { name: 'Particle Physics', level: 70 }
     ];
 
     const programmingSkills = [
         { name: 'Python', level: 95 },
         { name: 'MATLAB', level: 90 },
-        { name: 'C++', level: 85 },
-        { name: 'Julia', level: 80 },
-        { name: 'R', level: 75 },
-        { name: 'Fortran', level: 70 }
+        { name: 'C/C++', level: 85 },
+        { name: 'Mathematica', level: 80 },
     ];
 
     const toolsSkills = [
         { name: 'LaTeX', level: 95 },
-        { name: 'Mathematica', level: 90 },
         { name: 'NumPy/SciPy', level: 90 },
-        { name: 'TensorFlow', level: 85 },
         { name: 'Git', level: 80 },
         { name: 'Linux', level: 90 }
     ];
