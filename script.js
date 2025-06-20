@@ -40,59 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Publications data
     const publications = [
         {
-            title: "Quantum Entanglement in Multi-Particle Systems: A Computational Approach",
-            authors: "A.D., Smith, J., Johnson, M.",
-            journal: "Journal of Quantum Physics, 34(2), 157-172",
-            abstract: "This paper presents a novel computational framework for simulating and analyzing quantum entanglement in systems with multiple particles, providing insights into quantum information processing.",
+            title: "Quantum thing on quantum",
+            authors: "A.D.",
+            journal: "Journal of oui",
+            abstract: "This paper presents something... probably",
             date: "April 2024",
-            link: "#"
-        },
-        {
-            title: "Statistical Analysis of Phase Transitions in Complex Networks",
-            authors: "A.D., Chen, L., Patel, R.",
-            journal: "Physical Review B, 89(5), 245-260",
-            abstract: "We investigate the emergence of phase transitions in complex networks using statistical mechanics approaches, revealing universal patterns across different network topologies.",
-            date: "February 2024",
-            link: "#"
-        },
-        {
-            title: "Computational Methods for Quantum System Simulations",
-            authors: "A.D., Martinez, E.",
-            journal: "Computational Physics Communications, 215, 78-92",
-            abstract: "This paper introduces efficient computational methods for simulating quantum systems at scale, with applications in materials science and quantum computing.",
-            date: "October 2023",
-            link: "#"
-        },
-        {
-            title: "Non-Equilibrium Dynamics in Quantum Many-Body Systems",
-            authors: "Johnson, M., A.D., Williams, T.",
-            journal: "Physical Review Letters, 128(17), 176401",
-            abstract: "We explore the rich dynamical behavior of quantum many-body systems far from equilibrium, with implications for quantum thermalization and information scrambling.",
-            date: "August 2023",
-            link: "#"
-        },
-        {
-            title: "Machine Learning Approaches to Quantum State Classification",
-            authors: "A.D., Zhang, W., Roberts, S.",
-            journal: "npj Quantum Information, 9, 45",
-            abstract: "This work demonstrates how modern machine learning techniques can be applied to classify and characterize quantum states, providing a bridge between quantum physics and artificial intelligence.",
-            date: "June 2023",
-            link: "#"
-        },
-        {
-            title: "Topological Phases in Driven Quantum Systems",
-            authors: "A.D., Kumar, P.",
-            journal: "Nature Physics, 18(5), 542-548",
-            abstract: "We investigate the emergence of novel topological phases in periodically driven quantum systems, establishing a framework for engineering exotic quantum states.",
-            date: "March 2023",
-            link: "#"
-        },
-        {
-            title: "Quantum Coherence in Biological Systems",
-            authors: "Wilson, J., A.D., Garcia, M.",
-            journal: "Quantum Science and Technology, 7(3), 034001",
-            abstract: "This paper explores the role of quantum coherence in biological processes, examining evidence for quantum effects in photosynthesis and avian navigation.",
-            date: "December 2022",
             link: "#"
         }
     ];
